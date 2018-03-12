@@ -1,16 +1,18 @@
 <template>
 	<div id="app">
-		<slider />
+		<slider :slideConfig="slideConfig" />
 	</div>
 </template>
 
 <script>
+	import slideConfig from './slideConfig'
+
 	import slider from './slider.vue'
 	export default {
 		name: 'app',
 		data() {
 			return {
-
+				slideConfig: slideConfig
 			}
 		},
 		mounted() {
